@@ -41,7 +41,7 @@ app.use(function (err, req, res, next) {
     error: app.get('env') === 'development' ? err : {}
   });
 });
-
+//
 
 if (require.main === module) {
   //connecting to db and either success message or error
