@@ -65,7 +65,7 @@ describe('Noteful API - Notes', function () {
     });
 
 
-    it('should return an empty array for an incorrect query', function () {
+    xit('should return an empty array for an incorrect query', function () {
       const dbPromise = Note.find({ title: { $regex: /NotValid/i } });
       const apiPromise = chai.request(app).get('/api/notes?searchTerm=NotValid');
 

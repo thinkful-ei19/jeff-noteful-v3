@@ -42,7 +42,7 @@ app.use(function (err, req, res, next) {
   });
 });
 //
-
+//
 if (require.main === module) {
   //connecting to db and either success message or error
   mongoose.connect(MONGODB_URI)
