@@ -2,8 +2,8 @@
 
 const mongoose = require('mongoose');
 const noteSchema = new mongoose.Schema({
-  title: {type:String, index: true},
-  content: {type:String, index: true},
+  title: {type:String},
+  content: {type:String},
   created: {type:Date, default: Date.now},
 });
 
